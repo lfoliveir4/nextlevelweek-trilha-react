@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import { ChallengeContext } from "../context/ChallengeContext";
 import { CountdownContext } from "../context/CountdownContext";
 import styles from "../styles/components/challengebox.module.css";
 
-export function ChallengeBox() {
+export function ChallengeBox(): ReactElement {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(
     ChallengeContext
   );

@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import { ChallengeContext } from "../context/ChallengeContext";
 import styles from "../styles/components/profile.module.css";
 
-export function Profile() {
+export function Profile(): ReactElement {
   const { level } = useContext(ChallengeContext);
 
   return (

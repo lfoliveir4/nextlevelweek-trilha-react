@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import { CountdownContext } from "../context/CountdownContext";
 
 import styles from "../styles/components/countdown.module.css";
 
-export function Countdown() {
+export function Countdown(): ReactElement {
   const {
     minutes,
     seconds,
